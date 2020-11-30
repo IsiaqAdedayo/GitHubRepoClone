@@ -1,0 +1,715 @@
+* {
+    font-family: -apple-system,Helvetica,Arial,sans-serif, Color;
+}
+
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    position: relative;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+.navbar,.navvm{
+    padding: 0.1rem;
+    background-color: #24292e;
+    color: #ffffff;
+    display: flex;
+    height: 9vh;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 20;
+}
+.nav-logo{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 48vw;
+    justify-content: space-around;
+}
+.nav-logo input[type=text],.mobile-input input[type=text] {
+    border: 1px solid #646363;
+    padding: 6px;
+    border-radius: 7px;
+    font-size: 1vw;
+    width: 18vw;
+    color: #d8d4d4;
+    background-color: #24292e;
+}
+
+.nav-logo button,.mobile-input button{
+    border: 1px solid #646363;
+    margin-top: 5px;
+    margin-left: -25px;
+    width: 18px;
+    position: absolute;
+    border-radius: 3px;
+    color: #d8d5d5;
+    background-color: #24292e;
+}
+
+
+::placeholder{
+    color: #b8b3b3;
+}
+
+.navOptions{
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.navOptions p{
+    font-size: 1vw;
+}
+
+
+.notifications{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 11vw;
+    justify-content: space-around;
+}
+
+.add-dropdown span{
+    font-size: 20px;
+}
+.dropdown-content{
+    background-color: #ffffff;
+    height: 150px;
+    margin-top: 5px;
+    position: absolute;
+    border-radius: 6px;
+    margin-left: -135px;
+    z-index: 140;
+    width: 160px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 8px 24px #959da533;
+    display: none;
+}
+
+.profile-dropdown-content{
+    background-color: #ffffff;
+    height: 480px;
+    margin-top: 10px;
+    position: absolute;
+    border-radius: 6px;
+    margin-left: -150px;
+    z-index: 140;
+    width: 170px;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 8px 24px #959da533;
+    display: none;
+}
+
+.add-dropdown:hover .dropdown-content {
+    display: block;
+}
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+
+
+.caret-up{
+    bottom: 162px;
+    left: 82%;
+    color: #ffffff;
+    position: relative;
+}
+.profile-caret-up{
+    bottom: 492px;
+    left: 146px;
+    color: #ffffff;
+    position: relative;
+}
+
+.dropdown-content a{
+    display: flex;
+    padding: 6px 16px;
+    text-decoration: none;
+    flex-direction: column;
+    color: #636464;
+    text-align: left;
+    font-size: 14px;
+}
+.profile-dropdown-content p, .profile-dropdown-content a, .profile-dropdown-content div{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 7px;
+    text-decoration: none;
+    color: #636464;
+    text-align: left;
+    font-size: 14px;
+}
+
+.profile-smile{
+    margin-left: 7px;
+    width: 140px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+hr.hr {
+    border-top: 1px solid #e2e2e2;
+  }
+
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.profile-details img, .pictureDropdown img{
+    border-radius: 100%;
+}
+
+.profile-name{
+    padding: 20px;
+}
+
+.profile-name h3{
+    font-weight: bold;
+    color: #24292e;
+    font-size: 30px;
+    padding-bottom: 0;
+    margin-bottom: -1vh;
+}
+
+.profile-name p{
+    color: #636464;
+    font-size: 20px;
+}
+
+
+
+
+.active{
+    border-bottom: 2px solid #f9826c;
+}
+
+.repositoriess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.repositoriesSpan{
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-left: 2px;
+    min-width: 20px;
+    padding: 0 1px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: rgba(209,213,218,0.5);
+    border: 1px solid transparent;
+    border-radius: 2em;
+}
+
+
+.profile-findRepository{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.profile-findRepository input{
+    width: 34vw;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    font-size: 1vw;
+    color: #636464;
+    padding: 8px;
+}
+
+
+.new-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    min-width: 5vw;
+    border-radius: 5px;
+    border: 1px solid #1b1f2326;
+    font-size: 1vw;
+    color: #e2e2e2;
+    padding: 1px 10px;
+    background-color: #2ea44f;
+    cursor: pointer;
+}
+.select-options{
+    display: flex;
+}
+
+.subNavDesktop{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    padding: 45px 0 0 10px;
+    cursor: pointer;
+    color: #646363;
+    background-color: #ffffff;
+    width: 41vw;
+    z-index: 10;
+}
+
+.subNavDesktopLine{
+    border-bottom: 1px solid #e2e2e2;
+    width: 100vw;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 72%;
+    transition: all 0.5s;
+    margin-top: -40px; 
+}
+
+.select-options div{
+    margin-right: 1vw;
+}
+.custom-select-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-select,.language-select{
+    max-width: 31vw;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    font-size: 1.1vw;
+    color: #636464;
+    display: flex;
+}
+.custom-select__trigger,.language-select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    color: #3b3b3b;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.custom-select__trigger span,.language-select__trigger span{
+   padding-right: 6px;
+   padding-left: 5px;
+}
+
+.custom-options,.language-options {
+    position: absolute;
+    border-radius: 2%;
+    margin-top: 40px;
+    box-shadow: 0 0 3px #1b1f2366;
+    border: 1px solid transparent;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    width: 300px;
+}
+.custom-select.open .custom-options,.language-select.open .language-options{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.custom-option,.language-option {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 22px;
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: #3b3b3b;
+    border: 0.1px solid #f0eeee;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.custom-option:hover,.language-option:hover {
+    cursor: pointer;
+    background-color: #b2b2b2;
+}
+.custom-option.selected,.language-option.selected {
+    color: #3b3b3b;
+    border-radius: 2%;
+}
+
+.isDisabled {
+pointer-events: none;
+}
+
+.repository{
+    min-width: 70vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:  1px solid #e2e2e2;
+}
+.repo{
+    width: 100vw;
+}
+
+.repo p{
+  color: #646364;
+  font-size: 0.7em;
+}
+
+.repo h3{
+    color: #0366d6;
+    font-size: 2.7vw;
+}
+
+.repo-details{
+  display: flex;
+  justify-content: space-between;
+  width: 27vw;
+  color: #646364;
+  margin-top: -20px;
+}
+
+.repo-details h6{
+  font-size: 0.6em;
+  margin-right: 1vw;
+}
+
+.star{
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  font-size: 0.7em;
+  color: #636464;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  min-width: 6vw;
+  padding: 1px 10px;
+  cursor: pointer;
+  margin-top: 33px;
+}
+
+.profile-editButton{
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #636464;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+
+.profile-editButton div,.profile-editButton p {
+    padding: 8px;
+}
+
+
+
+footer{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-left: 17px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+footer h6{
+    font-size: 0.7rem; 
+}
+
+footer p{
+      margin-right: 10px;
+      color: #0366d6;
+}
+
+.mobile-nav{
+      display: none;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 835px) {
+    .leftContainer{
+        max-width: 25vw;
+        margin-right: 20px;
+    }
+    .rightContainer{
+        width: 45vw;
+        margin-top: -40px;
+    }
+
+    .repoButtons{
+        display: flex;
+        max-width: 71vw;
+    }
+    .profile-findRepository{
+        margin-right: 12px;
+    }
+
+    .custom-select-wrapper{
+        width: 1vw;
+    }
+
+    .repositories{
+        margin-top: -30px;
+    }
+
+    .starDiv{
+        border-bottom: 1px solid lawngreen;
+        height: 90px;
+    }
+
+    .repo h3{
+        color: #0366d6;
+        font-size: 1.7vw;
+        flex-wrap: wrap;
+    }
+
+    .repoButtons{
+        border-bottom:  1px solid #e2e2e2;
+        width: 71vw;
+    }
+
+    .subNav{
+        display: none;
+    }
+    
+
+    .profile-details img{
+        border-radius: 100%;
+        width: 20vw;
+        height: 40vh;
+        margin-left: 35px;
+        margin-top: 30px;
+    }
+
+    .profile-name{
+        margin-top: -30px;
+    }
+
+    .profile-statusDiv{
+        display: none;
+    }
+
+    .container{
+        border-bottom:  1px solid #e2e2e2;
+        padding-bottom: 70px;
+    }
+
+    .Front-End{
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+
+    footer{
+        padding-top: 30px;
+    }
+
+    .custom-option,.language-option {
+        font-size: 0.8vw;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 835px) {
+
+    .navvm{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .navbar{
+        width:100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav{
+        width: 101%;
+        background-color: #24292e;
+        flex-direction: column;
+        position: absolute;
+        margin-left: -2px;
+        padding: 70px 0px 0 0px;
+        font-size: 2vw;
+        display: none;
+    }
+
+
+    .mobile-input input[type=text]{
+        font-size: 2vw;
+        width: 88vw;
+        margin-right: 16px;
+    }
+
+    .mobile-input button{
+        margin-left: -40px;
+    }
+
+    .mobile-options{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .mobile-input, .mobile-nav p{
+        border-bottom: 1px solid #646363;
+        padding-bottom: 10px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+
+    .nav-mobile{
+        margin-right: 37vw;
+        display: block;
+        cursor: pointer
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .nav-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-logo input[type=text],.nav-logo button {
+        display: none;
+    }
+
+    .navOptions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .add-dropdown,.profile-dropdown{
+        display: none;
+    }
+
+    .profile-details{
+        display: flex; 
+        flex-direction: row; 
+    }
+
+    .profile-status,.profile-editButton{
+        width: 90vw;
+        border-radius: 5px;
+        border: 1px solid #e2e2e2;
+        font-size: 1.7vw;
+        color: #636464;
+        cursor: pointer;
+    }
+
+    .profile-status div,.profile-editButton div{
+        padding: 8px;
+    }
+
+
+    .profile-statusDiv :hover{
+        color: #2121e2;
+    }
+
+    .profile-editButton{
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        font-size: 1.8vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .profile-name h3{
+        font-size: 3.5vw;
+    }
+
+    .profile-name p{
+        font-size: 2.7vw;
+    }
+
+    .profile-contact, .followCount{
+        color: #636464;
+        font-size: 2.3vw;
+    }
+
+    .subNav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1vw;
+        padding: 20px 0 0 10px;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        color: #646363;
+        font-size: 2vw; 
+    }
+
+    
+    .profile-findRepository input{
+        width: 88vw;
+        font-size: 1.7vw;
+    }
+
+
+    .custom-select-wrapper{
+        padding-bottom: 20px;
+        border-bottom:  1px solid #e2e2e2;
+    }
+
+
+    .custom-select,.language-select,.new-button{
+        font-size: 1.7vw;
+    }
+
+    .repo-details{
+        width: 45vw;
+    }
+
+    .subNavDesktop,.subNavDesktopLine{
+        display: none;
+    }
+  
+}
